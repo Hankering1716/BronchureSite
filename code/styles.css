@@ -1,63 +1,45 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x:hidden;
+}
 
-header {
-  text-align: center;
+a:link,
+a:visited {
+   
+    color:black;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition:all 3s;
+}
+
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
   color: #fff;
-  background-attachment: scroll;
-  background-image: url("images/bgBrawl.jfif");
-  
-  object-fit: cover;
-  background-position: center center;
-  background-repeat: none;
-  background-size:cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
 }
 
-header .intro-text {
-  padding-top: 100px;
-  padding-bottom: 50px;
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+  color: #fff;
 }
 
-header .intro-text .intro-lead-in {
-  margin-bottom: 25px;
-  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 22px;
-  font-style: italic;
-  line-height: 22px;
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: #cbbcb1;
 }
 
-header .intro-text .intro-heading {
-  margin-bottom: 25px;
-  text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 50px;
-  font-weight: 700;
-  line-height: 50px;
+.mask-custom {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, .15);
 }
 
-@media(min-width:768px) {
-  header .intro-text {
-      padding-top: 300px;
-      padding-bottom: 200px;
-  }
-
-  header .intro-text .intro-lead-in {
-      margin-bottom: 25px;
-      font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-      font-size: 40px;
-      font-style: italic;
-      line-height: 40px;
-  }
-
-  header .intro-text .intro-heading {
-      margin-bottom: 50px;
-      text-transform: uppercase;
-      font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-      font-size: 75px;
-      font-weight: 700;
-      line-height: 75px;
-  }
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 3px;
 }
 
