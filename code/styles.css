@@ -1,6 +1,5 @@
 html {
     scroll-behavior: smooth;
-    overflow-x:hidden;
 }
 
 a:link,
@@ -42,4 +41,6 @@ a:visited {
   font-size: 1.75rem;
   letter-spacing: 3px;
 }
-
+body {
+  padding-top: 30px;
+}
