@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 a:link,
@@ -44,3 +45,4 @@ a:visited {
 body {
   padding-top: 30px;
 }
+
